@@ -18,10 +18,12 @@ class MainActivity : AppCompatActivity() {
     var articles = mutableListOf<Articles>()
     var pageNum = 1
     var totalResults = -1
+    var country : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         adapter = MyAdapter(this@MainActivity, articles)
         newsList.adapter = adapter
@@ -47,7 +49,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getNews() {
-        val newsContainer = NewsService.newsInstance.getHeadlines("in", pageNum)
+        country = intent.getStringExtra("country").toString()
+        val newsContainer = NewsService.newsInstance.getHeadlines(country, pageNum)
         newsContainer.enqueue(object : Callback<News>{
             override fun onResponse(call: Call<News>, response: Response<News>) {
                 Log.d("TAG", "Successful")

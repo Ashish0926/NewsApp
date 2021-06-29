@@ -3,4 +3,27 @@
     <string name="textview">TextView</string>
     <string name="description">description</string>
     <string name="title">title</string>
+    <string name="country">Country?</string>
+    <string name="india">India</string>
+    <string name="usa">USA</string>
+    <string name="uk">UK</string>
+    <string name="australia">Australia</string>
+    <string name="south_korea">South Korea</string>
+    <string name="france">France</string>
+    <string name="china">China</string>
+    <string name="canada">Canada</string>
+    <string name="south_africa">South Africa</string>
+    <string name="japan">Japan</string>
+    <string name="israel">Israel</string>
+    <string name="russia">Russia</string>
+    <string name="uae">UAE</string>
+    <string name="germany">Germany</string>
+    <string name="italy">Italy</string>
+    <string name="brazil">Brazil</string>
+    <string name="hongkong">Hongkong</string>
+    <string name="new_zealand">New Zealand</string>
+    <string name="ireland">Ireland</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="tap_on_the_card_to_know_more">Tap on the card to know more</string>
+    <string name="newsapp">NewsApp</string>
 </resources>

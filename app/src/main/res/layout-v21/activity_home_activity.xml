@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".home_activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/home_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:padding="25dp"
+            android:text="@string/country"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="9"
+            android:columnCount="2"
+            app:layout_constraintTop_toBottomOf="@id/home_heading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/india"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_india"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/india"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/usa"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_usa"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/usa"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/uk"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_uk"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/uk"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/australia"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_australia"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/australia"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/south_korea"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_south_korea"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/south_korea"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/france"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_france"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/france"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/china"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_china"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/china"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/canada"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_canada"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/canada"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/south_africa"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_south_africa"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/south_africa"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/russia"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_russia"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/russia"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/germany"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_germany"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/germany"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/japan"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_japan"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/japan"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/israel"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_israel"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/israel"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/brazil"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_brazil"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/brazil"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/netherlands"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_netherlands"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/netherlands"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/uae"
+                android:layout_height="130dp"
+                android:layout_width="130dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_uae"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/uae"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
