@@ -33,77 +33,77 @@ class home_activity : AppCompatActivity() {
         //val hongkong : CardView = findViewById(R.id.hongkong)
 
         india.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "in")
             }
             startActivity(intent)
         }
 
         usa.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "us")
             }
             startActivity(intent)
         }
 
         uk.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "gb")
             }
             startActivity(intent)
         }
 
         australia.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "au")
             }
             startActivity(intent)
         }
 
         southKorea.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "kr")
             }
             startActivity(intent)
         }
 
         france.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "fr")
             }
             startActivity(intent)
         }
 
         china.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "cn")
             }
             startActivity(intent)
         }
 
         canada.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "ca")
             }
             startActivity(intent)
         }
 
         southAfrica.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "za")
             }
             startActivity(intent)
         }
 
         russia.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "ru")
             }
             startActivity(intent)
         }
 
         germany.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "de")
             }
             startActivity(intent)
@@ -111,35 +111,35 @@ class home_activity : AppCompatActivity() {
 
 
         japan.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "jp")
             }
             startActivity(intent)
         }
 
         israel.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "il")
             }
             startActivity(intent)
         }
 
         brazil.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "br")
             }
             startActivity(intent)
         }
 
         netherlands.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "nl")
             }
             startActivity(intent)
         }
 
         uae.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, CategoryActivity::class.java).apply {
                 putExtra("country", "ae")
             }
             startActivity(intent)

@@ -27,8 +27,8 @@
     <TextView
         android:id="@+id/newsTitle"
         style="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="20sp"
-        android:maxLines="2"
+        android:textSize="18sp"
+        android:maxLines="4"
         android:layout_marginTop="5dp"
         android:padding="5dp"
         android:fontFamily="@font/ubuntu_medium"

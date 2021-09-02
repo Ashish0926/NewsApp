@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/category_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:padding="25dp"
+            android:text="@string/select_category"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="9"
+            android:columnCount="2"
+            app:layout_constraintTop_toBottomOf="@id/category_heading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tech"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+    
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+    
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/technology"
+                        android:contentDescription="@string/app_name" />
+    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/technology"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/business"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/business"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/business"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/entertainment"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/entertainment"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/entertainment"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sports"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/sport"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/sports"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/politics"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/politics"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/politics"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/health"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/healthcare"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/health"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/science"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/science"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/science"
+                        android:layout_marginTop="10sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

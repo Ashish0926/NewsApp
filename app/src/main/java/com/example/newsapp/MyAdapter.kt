@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -27,7 +26,7 @@ class MyAdapter(private val context: Context, private val articles : List<Articl
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.title.text = articles[position].title
-        holder.Desc.text = articles[position].description
+        holder.desc.text = articles[position].description
         Glide.with(context).load(articles[position].urlToImage).into(holder.thumbnail)
         holder.itemView.setOnClickListener {
             val intent = Intent(context, DetailActivity::class.java)
@@ -41,9 +40,9 @@ class MyAdapter(private val context: Context, private val articles : List<Articl
     }
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val title = itemView.findViewById<TextView>(R.id.newsTitle)
-        val Desc : TextView = itemView.findViewById(R.id.newsDescription)
-        val thumbnail = itemView.findViewById<ImageView>(R.id.newsThumbnail)
+        val title: TextView = itemView.findViewById(R.id.newsTitle)
+        val desc : TextView = itemView.findViewById(R.id.newsDescription)
+        val thumbnail: ImageView = itemView.findViewById(R.id.newsThumbnail)
     }
 
 }

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".home_activity">
+    tools:context=".home_activity"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,7 +21,6 @@
             android:fontFamily="@font/ubuntu_bold"
             android:padding="25dp"
             android:text="@string/country"
-            android:layout_marginTop="20dp"
             android:textAlignment="center"
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"

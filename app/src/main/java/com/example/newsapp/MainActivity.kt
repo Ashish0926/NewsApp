@@ -3,9 +3,6 @@ package com.example.newsapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.retrofit.News
-import com.example.retrofit.NewsService
 import com.littlemango.stacklayoutmanager.StackLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
@@ -18,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     var articles = mutableListOf<Articles>()
     var pageNum = 1
     var totalResults = -1
-    var country : String = ""
+    private var country : String = ""
+    private var category : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,8 +47,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getNews() {
-        country = intent.getStringExtra("country").toString()
-        val newsContainer = NewsService.newsInstance.getHeadlines(country, pageNum)
+        this.country = intent.getStringExtra("country").toString()
+        this.category = intent.getStringExtra("category").toString()
+
+        val newsContainer = NewsService.newsInstance.getHeadlines(country, category, pageNum)
         newsContainer.enqueue(object : Callback<News>{
             override fun onResponse(call: Call<News>, response: Response<News>) {
                 Log.d("TAG", "Successful")
