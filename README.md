@@ -11,15 +11,7 @@ NewsApp is an android application that uses Retrofit Library &amp; REST-API prov
 ## Screenshots
 
 
-![photo_2021-09-12_18-44-39](https://user-images.githubusercontent.com/55145996/132989000-7e04d0bf-fc3a-49f0-b9c5-98ea13216da0.jpg)
+<img src="https://user-images.githubusercontent.com/55145996/132989000-7e04d0bf-fc3a-49f0-b9c5-98ea13216da0.jpg" width="210" height="400">  &nbsp;&nbsp;&nbsp;  <img src="https://user-images.githubusercontent.com/55145996/132989003-c2225d08-1b7c-496f-9422-6f9fb5b0e342.jpg" width="210" height="400">  &nbsp;&nbsp;&nbsp;  <img src="https://user-images.githubusercontent.com/55145996/132989004-27851a52-4ddb-4792-a854-f059323006fc.jpg" width="210" height="400">
 
-![photo_2021-09-12_18-45-18](https://user-images.githubusercontent.com/55145996/132989003-c2225d08-1b7c-496f-9422-6f9fb5b0e342.jpg)
-
-![photo_2021-09-12_18-45-24](https://user-images.githubusercontent.com/55145996/132989004-27851a52-4ddb-4792-a854-f059323006fc.jpg)
-
-![photo_2021-09-12_18-45-30](https://user-images.githubusercontent.com/55145996/132989005-eeb8560e-4120-4481-ae8c-3c57c67fd309.jpg)
-
-![photo_2021-09-12_18-45-35](https://user-images.githubusercontent.com/55145996/132989007-15e3a83a-3d5d-4548-bdad-22ccd01ec25c.jpg)
-
-![photo_2021-09-12_18-45-40](https://user-images.githubusercontent.com/55145996/132989009-b6755ef2-517b-4482-8b35-851acfa020c9.jpg)
+<img src="https://user-images.githubusercontent.com/55145996/132989005-eeb8560e-4120-4481-ae8c-3c57c67fd309.jpg" width="210" height="400">  &nbsp;&nbsp;&nbsp;  <img src="https://user-images.githubusercontent.com/55145996/132989007-15e3a83a-3d5d-4548-bdad-22ccd01ec25c.jpg" width="210" height="400">  &nbsp;&nbsp;&nbsp;  <img src="https://user-images.githubusercontent.com/55145996/132989009-b6755ef2-517b-4482-8b35-851acfa020c9.jpg" width="210" height="400">
 
