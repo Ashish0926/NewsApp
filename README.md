@@ -7,7 +7,7 @@ NewsApp is an android application that uses Retrofit Library &amp; REST-API prov
 * Kotlin
 * XML
 * [RESTful API](https://newsapi.org/)
-* Retrofit
+* [Retrofit](https://square.github.io/retrofit/)
 * Recycler View
 * [Stack Layout Manager](https://github.com/LittleMango/StackLayoutManager)
 
