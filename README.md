@@ -6,7 +6,7 @@ NewsApp is an android application that uses Retrofit Library &amp; REST-API prov
 * Card View
 * Recycler View
 * Retrofit
-* Stack Layout Manager
+* [Stack Layout Manager](https://github.com/LittleMango/StackLayoutManager)
 
 ## Screenshots
 
