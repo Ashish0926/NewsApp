@@ -1,7 +1,10 @@
 # NewsApp
-NewsApp is an android application that uses Retrofit Library &amp; REST-API provided by newsapi to fetch latest news from around the world and displays it in form of Card View in Stack Layout
+NewsApp is an android application that fetches latest news based on selected country and category. The app uses Retrofit library for HTTP method calls and GSON convertor for JSON parsing. Data is fetched from an API provided by newsapi.org
 
-## Technology Used :
+## How to download the app?
+Please navigate to the releases section and follow the instructions there to download and install the app :)
+
+## Technology used in making this application!
 
 * Android Studio
 * Kotlin
