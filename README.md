@@ -2,9 +2,9 @@
 NewsApp is an android application that fetches latest news based on selected country and category. The app uses Retrofit library for HTTP method calls and GSON convertor for JSON parsing. Data is fetched from an API provided by newsapi.org
 
 ## How to download the app?
-Please navigate to the releases section and follow the instructions there to download and install the app :)
+Please navigate to the [releases](https://github.com/Ashish0926/NewsApp/releases) section and follow the instructions there to download and install the app :)
 
-## Technology used in making this application!
+## Tech Stack!
 
 * Android Studio
 * Kotlin
